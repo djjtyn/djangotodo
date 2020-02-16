@@ -16,6 +16,12 @@
     {% else %}
       <td>{{ item.name }}</td>
     {% endif %}
+    <td>
+      <form action="toggle/{{ item.id }}" method="POST">
+      {% csrf_token %}
+        <input type="submit" value="toggle">
+      </form>
+    </td>
       <td>
         <form action="edit/{{ item.id }}" method="GET">
           <input type="submit" value="Edit">
