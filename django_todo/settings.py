@@ -31,7 +31,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     'localhost',
-    'ci-django-todo-list.herokuapp.com/',
+    'https://ci-django-todo-list.herokuapp.com/'
 ]
 
 
